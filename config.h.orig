@@ -5,12 +5,17 @@ static const unsigned int borderpx  = 5;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
+<<<<<<< HEAD
+static const char *fonts[]          = { "Cousine:size=15" };
+static const char dmenufont[]       = "Consine:size=15";
+=======
 // static const char *fonts[]          = { "Cousine Nerd Font Mono:size=10" };
 // static const char dmenufont[]       = "Cousine NF:size=10";
 static const char *fonts[]          = { "SauceCodePro NF:size=16" };
 static const char dmenufont[]       = "SauceCodePro NF:size=16";
 //static const char *fonts[]          = { "Symbols Nerd Font :size=16" };
 //static const char dmenufont[]       = "SourceCodePro:size=16";
+>>>>>>> 87c08f5f059ec3dca0f8bca9716caf82fd8c6cf6
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -62,7 +67,12 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "st", NULL };
+static const char *termcmd[]  = { "termite", NULL };
+<<<<<<< HEAD
+=======
+static const char *screenshotcmd[] = { "flameshot", "gui", NULL };
+static const char *trayercmd[] = { "/home/pix/dev/source-code/shell/t-toggle.sh",  NULL };
+>>>>>>> 87c08f5f059ec3dca0f8bca9716caf82fd8c6cf6
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
